@@ -22,21 +22,26 @@ Información del producto {{$producto->nombre}}
           </div>
           <div class="col-md-7">
             <h2><span class="lead text-success">Código: {{$producto->codigo}} </span><br><span class="featurette-heading">{{$producto->nombre}}</span></h2>
-            <p class="lead">{{nl2br(utf8_decode($producto->descripcioncorta))}}</p>
+            <p class="lead">{{substr(nl2br(utf8_decode($producto->descripcionlarga)),0,100)}}...</p>
             <hr/>
             <h2 class="display-4"><span class="lead">{{$producto->moneda}}</span> {{number_format($producto->precio,2)}} <span class="lead">Impuestos incluidos</span></h2>
             <p class=""> Cantidad mínima de compra para este artículo:<span class="lead text-danger"> {{$producto->ventaminima}} unidades.</span>
             <hr/>
             {{-- --------------------------------------- --}}
+            @if($imgmarca = $producto->marca)
+            <img class="shadow-sm" src="{{asset ('/imgs/marcas')}}/{{$imgmarca}}.svg" alt="{{$producto->nombre}}" style="max-width: 33%" data-holder-rendered="true">
+            <br>
+            @endif
+            {{-- --------------------------------------------------------------- --}}
             @if($producto->status==1)
             <p class="badge badge-success">Disponible</p>
             </p>
             @endif
                   @if($producto->status==2)
                   <p class="badge badge-danger">Artículo NO disponible</p>
-                  
                   @endif
             {{-- ------------------------------------------------- --}}
+ 
           </div>
       </div>
       <div class="col-md-12">

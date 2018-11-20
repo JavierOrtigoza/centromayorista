@@ -22,7 +22,12 @@ class Producto extends Model
         'imagen',
         'ventaminima',
         'familia',
-        'nombreslug'
+        'nombreslug',
+        'ventaminima',
+        'nombrefigaro',
+        'video',
+        'afiche',
+        'marca'
     ];
 
 

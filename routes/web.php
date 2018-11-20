@@ -22,7 +22,7 @@ Route::get('productos-de-la-familia-{familia}', 'ProductosController@productospo
 
 Route::get('pagina-del-producto-{id}-de-{familia}-{nombreslug}','ProductosController@productoindividual'); // ficha de producto individual
 
-Route::get('/administracion/cargoproductos','ProductosController@cargoproductos'); // carga los productos desde svg en productos
-
 Route::get('search','ProductosController@buscar'); // búsqueda de productos
 
+// -------------------- ruta de administración ------------------
+Route::get('/administracion/cargoproductos','ProductosController@cargoproductos'); // carga los productos desde svg en productos
