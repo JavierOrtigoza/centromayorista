@@ -45,9 +45,12 @@ Información del producto {{$producto->nombre}}
           </div>
       </div>
       <div class="col-md-12">
-          <hr/>
-        <h2 class="featurette-heading">Descripción del producto</h2>
+        <hr/>
+        
+        @if ($largo = $producto->descripcionlarga)
+        <h2 class="featurette-heading">Descripción del producto:</h2>
         <p>  {{nl2br(utf8_decode($producto->descripcionlarga))}}</p>
+        @endif
       </div>  
 
   </div>

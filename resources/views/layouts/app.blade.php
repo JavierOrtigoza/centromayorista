@@ -10,7 +10,7 @@
     <title>@yield('title')</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{asset ('css/app.css?1.1')}}" rel="stylesheet" />
+    <link href="{{asset ('css/app.css?1.100')}}" rel="stylesheet" />
     <link href="{{asset ('css/css.css')}}" rel="stylesheet" />
     <!-- Custom styles for this template -->
     {{-- <link href="{{asset ('css/carousel.css')}}" rel="stylesheet" /> --}}
