@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top " style=" background-color: #00a69c">
     <a class="navbar-brand " href="/">
         <img src="{{asset ('/imgs/logo-con-nombre.svg')}}"  height="35" class="d-inline-block align-top " alt="Logo Centro Mayorista Uruguay">
-        
+
     </a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
   <span class="navbar-toggler-icon"></span>
@@ -67,7 +67,7 @@
 
 
     <li class="nav-item">
-      <a class="nav-link text-uppercase " href="#">Último ingreso</a>
+      <a class="nav-link text-uppercase " href="productos-de-ultimo-ingreso.html">Último ingreso</a>
     </li>
     <li class="nav-item">
       <a class="nav-link text-uppercase" href="#">contacto</a>

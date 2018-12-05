@@ -10,7 +10,7 @@ class ProductosController extends Controller
 {
 
 // ----------muestra los productos de cada familia-------------------------------------------
-//
+
     Public function productosporfamilia($familia)
         {
             $producto = Producto::where('familia',$familia)
@@ -18,6 +18,17 @@ class ProductosController extends Controller
                 ->paginate(24);
             return view('mostrarproductos')->with(compact('producto','familia'));
         }
+
+// ----------muestra los productos de último ingreso-------------------------------------------
+
+Public function ultimoingreso()
+{
+    $producto = Producto::where('ultimoingreso',1)
+        ->orderBy('nombre')
+        ->paginate(24);
+    return view('ultimoingreso')->with(compact('producto'));
+}
+
 // -------------- carga los productos en la base de datos desde un csv ---------------------
     Public function cargoproductos()
         {
@@ -27,7 +38,7 @@ class ProductosController extends Controller
         $contador = 1;
         $lineas=sizeof($datos);
         $lineas--;
-        
+
             while ($contador <= $lineas)
             {
                 $xprod = new \App\Producto();
@@ -48,6 +59,8 @@ class ProductosController extends Controller
                     $xprod->familia = $datos[$contador][9];
                     $xprod->nombrefigaro = nl2br($datos[$contador][10]);
                     $xprod->marca = $datos[$contador][11];
+                    $xprod->ultimoingreso = $datos[$contador][6];
+
                 $xprod->save();
                 $contador++;
             }

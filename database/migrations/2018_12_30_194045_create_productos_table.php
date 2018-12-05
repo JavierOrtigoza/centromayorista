@@ -38,6 +38,13 @@ class CreateProductosTable extends Migration
             $table->string('video')->nullable();
             $table->string('afiche')->nullable();
             $table->string('marca')->nullable();
+            $table->string('ultimoingreso')->nullable();
+
+            //FK marca
+            $table->integer('marca_id')->unsigned()->nullable();
+            $table->foreign('marca_id')->references('id')->on('marcas');
+            //
+
             });
     }
 

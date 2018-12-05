@@ -34,24 +34,27 @@ Información del producto {{$producto->nombre}}
             @endif
             {{-- --------------------------------------------------------------- --}}
             @if($producto->status==1)
-            <p class="badge badge-success">Disponible</p>
-            </p>
-            @endif
-                  @if($producto->status==2)
-                  <p class="badge badge-danger">Artículo NO disponible</p>
+            <p class="badge badge-success">Disponible
                   @endif
+                  @if($producto->status==2)
+                  <p class="badge badge-danger">Artículo NO disponible
+                  @endif
+                        @if($producto->ultimoingreso==1)
+                        <p class="badge badge-warning">Último ingreso
+                        @endif
+                        </p>
             {{-- ------------------------------------------------- --}}
- 
+
           </div>
       </div>
       <div class="col-md-12">
         <hr/>
-        
+
         @if ($largo = $producto->descripcionlarga)
         <h2 class="featurette-heading">Descripción del producto:</h2>
         <p>  {{nl2br(utf8_decode($producto->descripcionlarga))}}</p>
         @endif
-      </div>  
+      </div>
 
   </div>
 </div>

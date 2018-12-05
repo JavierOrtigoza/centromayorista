@@ -16,12 +16,16 @@
                                 {{-- ----------------------------------------------------------------- --}}
                                 @if($xproducto->status==1)
                                 <span class="badge badge-success">Disponible</span>
-                                </p>
+                                {{-- </p> --}}
                                 @endif
                                       @if($xproducto->status==2)
                                       <span class="badge badge-danger">NO disponible</span>
-                                      </p>
+                                      {{-- </p> --}}
                                       @endif
+                                        @if($xproducto->ultimoingreso==1)
+                                        <span class="badge badge-warning">Último ingreso</span>
+                                        @endif
+
                                {{-- -------------------------------------------------------------------------------- --}}
 
                         </div>

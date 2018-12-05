@@ -24,5 +24,7 @@ Route::get('pagina-del-producto-{id}-de-{familia}-{nombreslug}','ProductosContro
 
 Route::get('search','ProductosController@buscar'); // búsqueda de productos
 
+Route::get('productos-de-ultimo-ingreso.html','ProductosController@ultimoingreso');
+
 // -------------------- ruta de administración ------------------
 Route::get('/administracion/cargoproductos','ProductosController@cargoproductos'); // carga los productos desde svg en productos
