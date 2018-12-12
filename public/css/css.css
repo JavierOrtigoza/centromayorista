@@ -29,9 +29,9 @@ margin-left: 10px !important;
     fill-opacity: 50% !important;
 }
 
-.icono:hover{
+/* .icono:hover{
     transform: scale(1.05) ;
-}
+} */
 
 .navbar-dark .navbar-nav .nav-link {
     color: hsla(0,0%,100%,1);
@@ -67,5 +67,9 @@ margin-left: 10px !important;
 }
 .fotopromo{
     border: 0.5rem solid white;
-    
+}
+
+.txtingreso{
+color:yellow !important;
+text-shadow: #474747;
 }

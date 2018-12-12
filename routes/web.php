@@ -28,3 +28,7 @@ Route::get('productos-de-ultimo-ingreso.html','ProductosController@ultimoingreso
 
 // -------------------- ruta de administración ------------------
 Route::get('/administracion/cargoproductos','ProductosController@cargoproductos'); // carga los productos desde svg en productos
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

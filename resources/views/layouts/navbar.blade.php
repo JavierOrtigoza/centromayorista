@@ -10,7 +10,7 @@
 <div class="collapse navbar-collapse" id="navbarCollapse">
   <ul class="navbar-nav mr-auto">
     <li class="nav-item">
-      <a class="nav-link text-uppercase espacio-navbar icono" href="/">inicio <span class="sr-only"></span></a>
+      <a class="nav-link text-uppercase espacio-navbar" href="/">inicio <span class="sr-only"></span></a>
     </li>
     <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -30,7 +30,7 @@
           </div>
     </li>
 
-    <li class="nav-item dropdown">
+    <li class="nav-item dropdown text-right">
       <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Regalos
       </a>
@@ -45,10 +45,10 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item " href="productos-de-la-familia-SRI">Sistemas Retención Infantil</a>
         </div>
-  </li>
+    </li>
 
 
-  <li class="nav-item dropdown">
+<li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Cuidado personal
     </a>
@@ -65,13 +65,50 @@
       </div>
 </li>
 
+<li class="nav-item">
+    <a class="nav-link text-uppercase espacio-navbar" href="productos-de-ultimo-ingreso.html">ultimo ingreso <span class="sr-only"></span></a>
+</li>
 
-    <li class="nav-item">
-      <a class="nav-link text-uppercase " href="productos-de-ultimo-ingreso.html">Último ingreso</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link text-uppercase" href="#">contacto</a>
-    </li>
+
+
+
+<li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      @auth
+            {{ Auth::user()->name }} </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="{{ route('logout') }}"
+                       onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+                        {{ __('Cerrar sesión') }}
+                    </a>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+            </div>
+
+      @else
+      <img src="{{asset ('/imgs/user.svg')}}"  height="25" class="d-inline-block align-top text-right" alt="Ingreso de usuario"> </a>
+      @endauth
+
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+      @if (Route::has('login'))
+            @auth
+            <a class="dropdown-item" href="{{ url('/home') }}">{{ Auth::user()->name }}</a>
+            @else
+            <a class="dropdown-item" href="{{ route('login') }}">Ingresar</a>
+              @if (Route::has('register'))
+              <a class="dropdown-item"href="{{ route('register') }}">Registrarse</a>
+              @endif
+          @endauth
+
+      @endif
+    </div>
+</li>
+
+
   </ul>
 <form class="form-inline mt-2 mt-md-0" method="get" action="{{url('/search')}}">
     <input class="form-control mr-sm-2" type="text" placeholder="Buscar productos..." name="query" aria-label="Search">
