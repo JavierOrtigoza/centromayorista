@@ -11,6 +11,15 @@ transform: scale(1.05) rotate(-2deg) !important;
 transition-duration: 0.75s !important;
 }
 
+.fotomarca{
+filter: grayscale(1);   
+}
+
+.fotomarca:hover {
+    filter: grayscale(0);
+    transition-duration: 0.2s;    
+}
+   
 .espacio-sup{
     padding-top: 50px;
 }

@@ -99,4 +99,16 @@ Public function buscar (Request $request) // búsqueda de productos... x nombre 
 
     }
 // --------------------------------------------------------------------------------------
+
+// ----------muestra los productos de cada marca -------------------------------------------
+
+Public function productospormarca($marca)
+{
+    $producto = Producto::where('marca',$marca)
+        ->orderBy('nombre')
+        ->paginate(24);
+    return view('mostrarmarca')->with(compact('producto','marca'));
+}
+
+
 }

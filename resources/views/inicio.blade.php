@@ -12,27 +12,47 @@
 
 <div class="jumbotron text-center">
 
-    <img src="{{asset ('imgs/slide/fotopromo.jpeg')}}"
-    class="img-fluid fotopromo" type="max-width: 100%" alt="">
+    <a href="productos-de-la-marca-ORUS"><img src="{{asset ('imgs/slide/fotopromo.jpeg')}}"
+    class="img-fluid fotopromo" type="max-width: 100%" alt=""></a>
 </div>
+
+
 <div class ="container">
 <div class="row">
-    <div class="col-md-3">
-        <img src="{{asset ('imgs/herramientastotal.svg')}}"
-        class="img-fluid" type="max-width: 100%" alt="Herramientas Total">
-
+    <div class="col-6 col-md-2 fotomarca">
+        <a href="productos-de-la-marca-TOTAL"><img src="{{asset ('imgs/marcas/total.svg')}}"
+        class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca TOTAL">
+        </a>
     </div>
 
-    <div class="col-md-3">
-        <img src="{{asset ('imgs/electronicacrown.svg')}}"
-         class="img-fluid" type="max-width: 100%" alt="">
+    <div class="col-6 col-md-2 fotomarca">
+        <a href="productos-de-la-marca-CROWN"><img src="{{asset ('imgs/marcas/crown.svg')}}"
+         class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca CROWN">
+        </a>
     </div>
-    <div class="col-md-3">
-            <img src="{{asset ('imgs/srimybaby.svg')}}" class="img-fluid" type="max-width: 100%" alt="">
+    <div class="col-6 col-md-2 fotomarca">
+        <a href="productos-de-la-marca-MY BABY"><img src="{{asset ('imgs/marcas/mybaby.svg')}}" 
+        class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca MY BABY">
+        </a>
     </div>
-    <div class="col-md-3">
-            <img src="{{asset ('imgs/bellezagemei.svg')}}" class="img-fluid" type="max-width: 100%" alt="">
+    <div class="col-6 col-md-2 fotomarca">
+        <a href="productos-de-la-marca-GEMEI"><img src="{{asset ('imgs/marcas/gemei.svg')}}" 
+        class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca GEMEI">
+        </a>
     </div>
+
+    <div class="col-6 col-md-2 fotomarca">
+        <a href="productos-de-la-marca-ORUS"><img src="{{asset ('imgs/marcas/orus.svg')}}" 
+        class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca ORUS">
+        </a>
+    </div>
+
+    <div class="col-6 col-md-2 fotomarca">
+        <a href="productos-de-ultimo-ingreso.html"><img src="{{asset ('imgs/marcas/ultimoingreso.svg')}}" 
+        class="img-fluid" type="max-width: 100%" alt="Mostrar los productos del último ingreso">
+        </a>
+    </div>
+
 </div>
 
 </div>
@@ -49,25 +69,3 @@
                 @include('partials.card')
 @endsection
 
-
-
-
-
-
-
-
-
-
-
-
-{{-- ***************************************************************************** --}}
-{{--
-
-@section( 'content' )
-
-    <div class="album py-5 bg-white">
-        <div class="container">
-            @extends('partials.product.card')
-        </div>
-    </div>
-@endsection --}}
