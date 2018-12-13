@@ -11,9 +11,6 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('temp');
-// });
 
 // ======================================================================
 Route::get('/', 'ProductosController@inicio'); // página de inicio
@@ -27,7 +24,9 @@ Route::get('search','ProductosController@buscar'); // búsqueda de productos
 Route::get('productos-de-ultimo-ingreso.html','ProductosController@ultimoingreso');
 
 // -------------------- ruta de administración ------------------
-Route::get('/administracion/cargoproductos','ProductosController@cargoproductos'); // carga los productos desde svg en productos
+Route::get('/administracion/cargoproductos','AdminProductosController@cargoproductos'); // carga los productos desde svg en productos
+Route::get('/administracion/actualizar-disponibilidad','AdminProductosController@dispobibilidad'); //chequea estado de los productos
+Route::get('/administracion/actualizar-precios', 'AdminProductosController@precios'); //chequea precios
 
 Auth::routes();
 
