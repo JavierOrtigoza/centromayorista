@@ -18,7 +18,7 @@ Información del producto {{$producto->nombre}}
 
       <div class="row featurette">
         <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto border-right" src="http://www.images.centromayorista.uy/img/{{$producto->imagen}}.jpg" alt="{{$producto->nombre}}" style="" data-holder-rendered="true">
+            <img class="featurette-image img-fluid mx-auto border-right" src="http://www.mundocosmetico.net/imagenes/{{$producto->imagen}}.jpg" alt="{{$producto->nombre}}" style="" data-holder-rendered="true">
           </div>
           <div class="col-md-7">
             <h2><span class="lead text-success">Código: {{$producto->codigo}} </span><br><span class="featurette-heading">{{$producto->nombre}}</span></h2>
