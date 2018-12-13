@@ -11,7 +11,13 @@ transform: scale(1.05) rotate(-2deg) !important;
 transition-duration: 0.75s !important;
 }
 
+/* .fondomarcas{
+background-color: var(--xcolor2)
+} */
+
 .fotomarca{
+padding-top: 0.5rem;
+padding-bottom: 0.5rem;    
 filter: grayscale(1);   
 }
 

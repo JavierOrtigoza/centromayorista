@@ -15,7 +15,7 @@
    version="1.1"
    id="svg1457"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="marca-total.svg">
+   sodipodi:docname="total.svg">
   <defs
      id="defs1451" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.49497475"
-     inkscape:cx="541.21355"
+     inkscape:cx="212.91398"
      inkscape:cy="216.03143"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -48,7 +48,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -58,7 +58,7 @@
      id="layer1"
      transform="translate(15.000005,-108.5)">
     <rect
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#007279;stroke-width:0.78025246;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:none;fill-opacity:1;stroke:#007279;stroke-width:0.78025246;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect1282"
        width="239.21976"
        height="79.219749"
