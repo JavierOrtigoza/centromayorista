@@ -4,8 +4,11 @@
 <div class="container">
       <div class="row">
             @foreach ($producto as $xproducto)
-                  <div class="col-lg-3 text-center ">
-                  <a title="{{$xproducto->nombre}}" href="pagina-del-producto-{{$xproducto->id}}-de-{{$xproducto->familia}}-{{$xproducto->nombreslug}}"><img class="rounded-0 border border-ligth shadow-sm fotoprod" src="http://www.mundocosmetico.net/imagenes/{{$xproducto->imagen}}.jpg" alt="{{$xproducto->codigo}}" width="250" height="250" ></a>
+                  <div class="col-sm-6 col-md-4 col-lg-3 text-center ">
+                  <a title="{{$xproducto->nombre}}" href="pagina-del-producto-{{$xproducto->id}}-de-{{$xproducto->familia}}-{{$xproducto->nombreslug}}">
+                        <img class="rounded-0 border border-ligth shadow-sm fotoprod" 
+                        src="http://www.mundocosmetico.net/imagenes/{{$xproducto->imagen}}.jpg" alt="{{$xproducto->codigo}}" 
+                         ></a>
                         <div class="container  ">
                             <p></p>
                             <p

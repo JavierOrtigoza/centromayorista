@@ -3,6 +3,9 @@
     --xcolor2: #00a69c;
 }
 
+.fotoprod{
+max-width: 100%;
+}
 
 .fotoprod:hover{
 border-color: var(--xcolor1) !important;
