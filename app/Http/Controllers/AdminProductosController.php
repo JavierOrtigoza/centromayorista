@@ -46,4 +46,21 @@ class AdminProductosController extends Controller
 
     return('Se han procesado los siguientes renglones: '.$lineas);
     }
+
+// -------------- administrar productos ---------------------
+Public function productos()
+{
+$productos = Producto::where('status','<>',999)
+    ->orderBy('codigo')
+    ->paginate(50);
+    return view('admin.admin_productos')->with(compact('productos'));
+}
+
+// -------------- editar producto ---------------------
+Public function editarproducto()
+{
+    $productos = Producto::find($id);
+    return view('admin.editarproducto')->with(compact('productos'));
+}
+
 }

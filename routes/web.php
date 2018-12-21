@@ -29,7 +29,7 @@ Route::get('productos-de-ultimo-ingreso.html','ProductosController@ultimoingreso
 Route::get('/administracion/cargoproductos','AdminProductosController@cargoproductos'); // carga los productos desde svg en productos
 Route::get('/administracion/actualizar-disponibilidad','AdminProductosController@dispobibilidad'); //chequea estado de los productos
 Route::get('/administracion/actualizar-precios', 'AdminProductosController@precios'); //chequea precios
-
+Route::get('/administracion/productos','AdminProductosController@productos'); //adminstrar productos
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
