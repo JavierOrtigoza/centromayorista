@@ -1,5 +1,5 @@
 {{-- ============================================ barra de navegación =======================================================         --}}
-<nav class="navbar navbar-expand-md navbar-dark fixed-top " style=" background-color: #00a69c">
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top " style=" background-color: #00a69c">
     <a class="navbar-brand " href="/">
         <img src="{{asset ('/imgs/logo-con-nombre.svg')}}"  height="35" class="d-inline-block align-top " alt="Logo Centro Mayorista Uruguay">
 
@@ -30,7 +30,7 @@
           </div>
     </li>
 
-    <li class="nav-item dropdown text-right">
+    <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Regalos
       </a>
