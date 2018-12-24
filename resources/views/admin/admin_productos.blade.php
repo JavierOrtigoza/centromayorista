@@ -23,7 +23,7 @@
 @foreach ($productos as $producto)
 
     <tbody>
-      <tr>
+      <tr >
       <th scope="row">{{$producto->id}}</th>
         <td>{{$producto->codigo}}</td>
         <td>{{$producto->nombre}}</td>
@@ -33,7 +33,7 @@
         <td>{{$producto->ultimoingreso}}</td>
         <td>{{$producto->status}}</td>
         <td>{{$producto->familia}}</td>
-        <td>Editar</td>
+      <td><a href="{{url('/administracion/productos')}}/{{$producto->id}}/edit">Editar</td>
 
     </tr>      
 @endforeach

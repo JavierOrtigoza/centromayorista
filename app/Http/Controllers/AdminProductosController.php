@@ -57,10 +57,11 @@ $productos = Producto::where('status','<>',999)
 }
 
 // -------------- editar producto ---------------------
-Public function editarproducto()
+Public function edit($id)
 {
-    $productos = Producto::find($id);
-    return view('admin.editarproducto')->with(compact('productos'));
+    // return 'datos del producto '.$id;
+    $producto = Producto::find($id);
+    return view('admin.admin_editarproducto')->with(compact('producto'));
 }
 
 }

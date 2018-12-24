@@ -25,11 +25,16 @@ Route::get('search','ProductosController@buscar'); // búsqueda de productos
 
 Route::get('productos-de-ultimo-ingreso.html','ProductosController@ultimoingreso');
 
-// -------------------- ruta de administración ------------------
+// -------------------- rutas de administración ------------------
+Route::middleware(['auth','admin'])->group(function () {
 Route::get('/administracion/cargoproductos','AdminProductosController@cargoproductos'); // carga los productos desde svg en productos
 Route::get('/administracion/actualizar-disponibilidad','AdminProductosController@dispobibilidad'); //chequea estado de los productos
 Route::get('/administracion/actualizar-precios', 'AdminProductosController@precios'); //chequea precios
-Route::get('/administracion/productos','AdminProductosController@productos'); //adminstrar productos
+Route::get('/administracion/productos','AdminProductosController@productos'); //listado de productos
+Route::get('/administracion/productos/{id}/edit','AdminProductosController@edit'); //editar producto
+
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
