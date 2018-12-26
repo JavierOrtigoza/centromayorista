@@ -23,12 +23,22 @@
               <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Descripción"
               value="{{$producto->descripcion}}">
             </div>
+        
+            <div class="col">
+                <label for="Status">Status</label>
+                <select class="form-control" id="status" name="status" placeholder="">
+                <option selected>{{$producto->status}}</option>
+                  <option>0</option> No mostrar en la web
+                  <option>1</option> Mostrar como disponible
+                  <option>2</option> Mostrar como NO disponible
+                </select>
+            </div>
         </div>
 
         <div class="form-group">
                 <label for="descripcionlarga">Descripción larga</label>
         <textarea class="form-control" id="descripcionlarga" rows="6" >{{$producto->descripcionlarga}}</textarea>
-              </div>
+        </div>
 
         {{-- <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -37,7 +47,8 @@
 
 <div class="row">
     <div class="col">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-success">Actualizar</button>
+        <button type="submit" class="btn btn-primary">Cancelar</button>
     </div>
 </div>
     </form>
