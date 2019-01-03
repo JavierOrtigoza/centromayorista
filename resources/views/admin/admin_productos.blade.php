@@ -35,7 +35,18 @@
         <td>{{$producto->precio}}</td>
         <td>{{$producto->ventaminima}}</td>
         <td>{{$producto->ultimoingreso}}</td>
-        <td>{{$producto->status}}</td>
+        @if($producto->status == 0)
+          <td class="bg-danger text-white">{{$producto->status}}</td>            
+        @else
+          @if($producto->status == 1)
+          <td class="bg-success text-white">{{$producto->status}}</td> 
+          @else
+            @if($producto->status == 2)
+            <td class="bg-warning text-dark">{{$producto->status}}</td>
+            @endif
+          @endif
+        @endif    
+          {{-- <td>{{$producto->status}}</td> --}}
         <td>{{$producto->familia}}</td>
       <td><a href="{{url('/administracion/productos')}}/{{$producto->id}}/edit">Editar</td>
 
