@@ -71,7 +71,8 @@ Public function ultimoingreso()
 Public function productoindividual($id)
         {
         $producto = Producto::find($id);
-        return view('productoindividual')->with(compact('producto'));
+        $txt_largo= nl2br($producto->descripcionlarga);
+        return view('productoindividual')->with(compact('producto','txt_largo'));
         }
 
 

@@ -21,8 +21,8 @@ class AdminProductosController extends Controller
         while ($contador <= $lineas)
         {
             $xprod = new \App\Producto();
-                    $txtprod = utf8_decode(utf8_encode($datos[$contador][2]));
-                    $txtcorto= nl2br(utf8_encode($datos[$contador][3]));
+                $txtprod = utf8_decode(utf8_encode($datos[$contador][2]));
+                $txtcorto= nl2br(utf8_encode($datos[$contador][3]));
                 $xprod->codigo = $datos[$contador][0];
                 $xprod->codigofacturacion = $datos[$contador][0]; //
                 $xprod->nombre = $txtprod; //
@@ -62,6 +62,23 @@ Public function edit($id)
     // return 'datos del producto '.$id;
     $producto = Producto::find($id);
     return view('admin.admin_editarproducto')->with(compact('producto'));
+}
+
+// -------------------- actualiza los datos del producto -------------------------------
+Public function update(Request $request,$id)
+{
+    
+    $producto = Producto::find($id);
+    $slug = str_slug($request->input('nombre'),'-');
+        // dd($id,$slug,$producto,$request->all());
+
+    $producto->nombre              = $request->input('nombre');
+    $producto->nombreslug          = $slug;
+    $producto->descripcioncorta    = $request->input('descripcioncorta');
+    $producto->descripcionlarga    = $request->input('descripcionlarga');
+    $producto->status              = $request->input('status');
+    $producto->save();
+    return redirect('/administracion/productos');
 }
 
 }

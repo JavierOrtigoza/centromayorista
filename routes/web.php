@@ -32,7 +32,8 @@ Route::get('/administracion/actualizar-disponibilidad','AdminProductosController
 Route::get('/administracion/actualizar-precios', 'AdminProductosController@precios'); //chequea precios
 Route::get('/administracion/productos','AdminProductosController@productos'); //listado de productos
 Route::get('/administracion/productos/{id}/edit','AdminProductosController@edit'); //editar producto
-
+Route::post('/administracion/productos/{id}/actualizar', 'AdminProductosController@update'); //actualiza los datos del producto editado
+Route::get('/administracion','AdminProductosController@home'); //pagina de inicio de administración
 });
 
 Auth::routes();

@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <form method="POST" action="{{url('/administracion/productos')}}/{{$producto->id}}/edit">
+    <form method="POST" action="{{url('/administracion/productos/'.$producto->id.'/actualizar')}}">
         @csrf
         <div class="row">
             <div class="col">    
@@ -13,14 +13,14 @@
 
             <div class="col">
               <label for="">Artículo</label>
-              <input type="text" class="form-control" id="articulo" name="articulo" placeholder="Artículo"
+              <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del producto"
               value="{{$producto->nombre}}">
             </div>
         </div>
         <div class="row">
             <div class="col">
-              <label for="">Descripción</label>
-              <input type="text" class="form-control" id="descripcion" name="descripcion" placeholder="Descripción"
+              <label for="">Descripción corta</label>
+              <input type="text" class="form-control" id="descripcioncorta" name="descripcioncorta" placeholder="Descripción"
               value="{{$producto->descripcion}}">
             </div>
         
@@ -37,7 +37,7 @@
 
         <div class="form-group">
                 <label for="descripcionlarga">Descripción larga</label>
-        <textarea class="form-control" id="descripcionlarga" rows="6" >{{$producto->descripcionlarga}}</textarea>
+        <textarea class="form-control" id="descripcionlarga" name="descripcionlarga"rows="6" >{{ $producto->descripcionlarga }}</textarea>
         </div>
 
         {{-- <div class="form-group form-check">
@@ -47,8 +47,9 @@
 
 <div class="row">
     <div class="col">
-        <button type="submit" class="btn btn-success">Actualizar</button>
-        <button type="submit" class="btn btn-primary">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Guardar los cambios</button>
+
+    {{-- <a href= "{{url(/administracion/productos)}}" type="submit" class="btn btn-primary">Cancelar</a> --}}
     </div>
 </div>
     </form>

@@ -52,7 +52,8 @@ Información del producto {{$producto->nombre}}
 
         @if ($largo = $producto->descripcionlarga)
         <h2 class="featurette-heading">Descripción del producto:</h2>
-        <p>  {{nl2br(utf8_decode($producto->descripcionlarga))}}</p>
+        {{-- <p>  {!!nl2br(utf8_encode($producto->descripcionlarga))!!}</p> --}}
+        <p>{!!nl2br($producto->descripcionlarga)!!}</p> 
         @endif
       </div>
 
