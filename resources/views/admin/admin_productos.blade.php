@@ -2,7 +2,11 @@
 
 @section('content')
 <div class="container">
-<h2>Listado de productos por código</h2>
+    <div class="espacio-sup">
+       
+      </div>
+
+<h1>Listado de productos por código</h1>
 
 <table class="table table-hover">
     <thead>

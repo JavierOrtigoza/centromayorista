@@ -1,7 +1,15 @@
 @extends ('admin.admin_app' )
 
 @section('content')
+
+<div class="espacio-sup">
+       
+</div>
+
 <div class="container">
+<p></p>    
+<h1>Editar información del producto</h1>
+
     <form method="POST" action="{{url('/administracion/productos/'.$producto->id.'/actualizar')}}">
         @csrf
         <div class="row">
@@ -37,19 +45,15 @@
 
         <div class="form-group">
                 <label for="descripcionlarga">Descripción larga</label>
+                
         <textarea class="form-control" id="descripcionlarga" name="descripcionlarga"rows="6" >{{ $producto->descripcionlarga }}</textarea>
         </div>
 
-        {{-- <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
-        </div> --}}
-
-<div class="row">
-    <div class="col">
+        <div class="row">
+        <div class="col">
         <button type="submit" class="btn btn-primary">Guardar los cambios</button>
 
-    {{-- <a href= "{{url(/administracion/productos)}}" type="submit" class="btn btn-primary">Cancelar</a> --}}
+        <a href= "{{url('/administracion/productos')}}" type="submit" class="btn btn-primary">Cancelar</a>
     </div>
 </div>
     </form>

@@ -23,7 +23,7 @@
 
 {{-- ================================== barra de navegación ================================== --}}
       <header>
-      {{-- @include('layouts.navbar') -- falta la barra navbar de admin    }}
+      @include('admin.admin_navbar') 
       </header>
 {{-- ========================================================================================= --}}
 
@@ -32,11 +32,6 @@
 </main>
 
 
-
-<!-- FOOTER -->
-<footer class="footer" >
-    {{-- @include('layouts.footer') --}}
-</footer>
 
   </body>
     <!-- Bootstrap core JavaScript

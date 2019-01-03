@@ -2,6 +2,9 @@
     --xcolor1: #474747;
     --xcolor2: #00a69c;
 }
+body{
+padding-top: 1em;
+}
 
 .fotoprod{
 max-width: 100%;

@@ -71,14 +71,28 @@ Public function update(Request $request,$id)
     $producto = Producto::find($id);
     $slug = str_slug($request->input('nombre'),'-');
         // dd($id,$slug,$producto,$request->all());
+        $textomal   = array('Ã¡','Ã³','Ã±');
+        $textobien  = array('á','ó','ñ');   
 
     $producto->nombre              = $request->input('nombre');
     $producto->nombreslug          = $slug;
     $producto->descripcioncorta    = $request->input('descripcioncorta');
-    $producto->descripcionlarga    = $request->input('descripcionlarga');
+    $producto->descripcionlarga    = str_replace($textomal , $textobien, $request->input('descripcionlarga'));
     $producto->status              = $request->input('status');
     $producto->save();
     return redirect('/administracion/productos');
 }
+
+// -------------------------------------------------------------------------------------------------------------
+
+Public function search (Request $request) // búsqueda de productos... x nombre y código
+    {
+    // $buscar = $request->query ;
+    $buscar = $request ['query'];
+    $productos = Producto::where('nombre','like',"%$buscar%")->orWhere('codigo','like',"%$buscar%")
+            ->orderBy('nombre')
+            ->paginate(50);
+    return view('admin.admin_productos')->with(compact('productos'));
+    }
 
 }
