@@ -71,8 +71,8 @@ Public function update(Request $request,$id)
     $producto = Producto::find($id);
     $slug = str_slug($request->input('nombre'),'-');
         // dd($id,$slug,$producto,$request->all());
-        $textomal   = array('Ã¡','Ã³','Ã±');
-        $textobien  = array('á','ó','ñ');   
+        $textomal   = array('Ã¡','Ã³','Ã±','Ãº','Ã');
+        $textobien  = array('á','ó','ñ','ú','Ñ');   
 
     $producto->nombre              = $request->input('nombre');
     $producto->nombreslug          = $slug;

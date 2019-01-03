@@ -13,7 +13,13 @@ class ProductosController extends Controller
 
 Public function productosporfamilia($familia)
     {
-    $producto = Producto::where('familia',$familia)
+
+        
+
+// where('familia',$familia)
+
+        $producto = Producto::where('familia',$familia) 
+        ->where('status','<>',0)
         ->orderBy('nombre')
         ->paginate(24);
     return view('mostrarproductos')->with(compact('producto','familia'));
@@ -24,6 +30,7 @@ Public function productosporfamilia($familia)
 Public function ultimoingreso()
     {
     $producto = Producto::where('ultimoingreso',1)
+        ->where('status','<>',0)
         ->orderBy('nombre')
         ->paginate(24);
     return view('ultimoingreso')->with(compact('producto'));
@@ -41,7 +48,7 @@ Public function productoindividual($id)
 
 Public function inicio() // página de inicio de la aplicación
     {
-    $producto = Producto::all()->random(16); // selecciona 16 arts aleatoriamente
+    $producto = Producto::all()->where('status','<>',0)->random(16); // selecciona 16 arts aleatoriamente
     return view('inicio')->with(compact('producto'));
     // return $producto;
     }
@@ -52,8 +59,9 @@ Public function buscar (Request $request) // búsqueda de productos... x nombre 
     {
     // $buscar = $request->query ;
     $buscar = $request ['query'];
-    $producto = Producto::where('nombre','like',"%$buscar%")->orWhere('codigo','like',"%$buscar%")
-            ->orderBy('nombre')
+    $producto = Producto::where('nombre','like',"%$buscar%")->where('status','<>',0)
+            ->orWhere('codigo','like',"%$buscar%")->where('status','<>',0)
+            ->orderBy('nombre')            
             ->paginate(24);
     return view('mostrarbusqueda')->with(compact('producto','buscar'));
     }
@@ -63,6 +71,7 @@ Public function buscar (Request $request) // búsqueda de productos... x nombre 
 Public function productospormarca($marca)
     {
     $producto = Producto::where('marca',$marca)
+        ->where('status','<>',0)
         ->orderBy('nombre')
         ->paginate(24);
     return view('mostrarmarca')->with(compact('producto','marca'));
