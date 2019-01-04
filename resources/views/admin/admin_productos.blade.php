@@ -58,7 +58,8 @@
 <hr/>
 <div class="container">
     <div class="text-center">
-        {{$productos->links()}}
+        {{$productos->appends(Request::except('page'))->links()}}
+        {{-- {{$productos->links()}} --}}
     </div>
 </div>
 {{-- -------------------------------------------------------------- --}}

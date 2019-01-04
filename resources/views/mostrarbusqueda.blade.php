@@ -4,9 +4,7 @@
 @extends('layouts.app')
 
 
-{{-- 2  - indica el contenido de esta página en particular, en el que extiende partials.product.card que es la vista de cada producto
-            dentro de la categoría , la cantidad de columnas que se van a crear para mostrar los artículos está indicada en card, y la
-            cantidad de productos a mostrar por página está indicada en el controlador ProductosController--}}
+{
 
 
 {{-- --------------------- título de la página --------------------------------------             --}}
