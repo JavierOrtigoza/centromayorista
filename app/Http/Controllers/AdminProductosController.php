@@ -8,6 +8,7 @@ use App\Producto;
 class AdminProductosController extends Controller
 {
 
+//--------------------------pagina home ------------------------------------------
     Public function home(){
         return view('admin.admin_home');
     }
@@ -84,6 +85,8 @@ Public function update(Request $request,$id)
     $producto->descripcioncorta    = $request->input('descripcioncorta');
     $producto->descripcionlarga    = str_replace($textomal , $textobien, $request->input('descripcionlarga'));
     $producto->status              = $request->input('status');
+    $producto->ventaminima         = $request->input('ventaminima');
+    $producto->ultimoingreso       = $request->input('ultimoingreso');
     $producto->save();
     return redirect('/administracion/productos');
 }

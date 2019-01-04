@@ -24,6 +24,7 @@
               <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del producto"
               value="{{$producto->nombre}}">
             </div>
+            
         </div>
         <div class="row">
             <div class="col">
@@ -40,6 +41,16 @@
                   <option>1</option> Mostrar como disponible
                   <option>2</option> Mostrar como NO disponible
                 </select>
+            </div>
+            <div class="col">
+                    <label for="">Venta mínima</label>
+                    <input type="number" class="form-control" id="ventaminima" name="ventaminima" placeholder="Venta mínima"
+                    value="{{$producto->ventaminima}}">
+            </div>
+            <div class="col">
+                    <label for="">Último ingreso</label>
+                    <input type="number" class="form-control" id="ultimoingreso" name="ultimoingreso" placeholder="ultimoingreso"
+                    value="{{$producto->ultimoingreso}}">
             </div>
         </div>
 
