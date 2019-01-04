@@ -27,6 +27,7 @@ Route::get('productos-de-ultimo-ingreso.html','ProductosController@ultimoingreso
 
 // -------------------- rutas de administración ------------------
 Route::middleware(['auth','admin'])->group(function () {
+Route::get('/administracion','AdminProductosController@home'); // página de inicio de administración
 Route::get('/administracion/cargoproductos','AdminProductosController@cargoproductos'); // carga los productos desde svg en productos
 Route::get('/administracion/productos','AdminProductosController@productos'); //listado de productos
 Route::get('/administracion/productos/{id}/edit','AdminProductosController@edit'); //editar producto

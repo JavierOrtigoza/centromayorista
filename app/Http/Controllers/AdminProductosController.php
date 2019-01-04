@@ -8,6 +8,11 @@ use App\Producto;
 class AdminProductosController extends Controller
 {
 
+    Public function home(){
+        return view('admin.admin_productos');
+    }
+
+
 // -------------- carga los productos en la base de datos desde un csv ---------------------
     Public function cargoproductos()
     {
