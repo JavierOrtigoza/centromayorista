@@ -9,7 +9,7 @@ class AdminProductosController extends Controller
 {
 
     Public function home(){
-        return view('admin.admin_productos');
+        return view('admin.admin_home');
     }
 
 
