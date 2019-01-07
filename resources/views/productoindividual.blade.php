@@ -29,8 +29,9 @@ Información del producto {{$producto->nombre}}
             <hr/>
             {{-- --------------------------------------- --}}
             @if($imgmarca = $producto->marca)
-            <img class="shadow-sm" src="{{asset ('/imgs/marcas')}}/{{$imgmarca}}.svg" alt="{{$producto->nombre}}" style="max-width: 33%" data-holder-rendered="true">
-            <br>
+                <img class="shadow-sm" src="{{asset ('/imgs/marcas')}}/{{strtolower($imgmarca)}}.svg" 
+                alt="{{$producto->nombre}}" style="max-width: 33%" data-holder-rendered="true">
+                <br>
             @endif
             {{-- --------------------------------------------------------------- --}}
             @if($producto->status==1)
@@ -52,7 +53,6 @@ Información del producto {{$producto->nombre}}
 
         @if ($largo = $producto->descripcionlarga)
         <h2 class="featurette-heading">Descripción del producto:</h2>
-        {{-- <p>  {!!nl2br(utf8_encode($producto->descripcionlarga))!!}</p> --}}
         <p>{!!nl2br($producto->descripcionlarga)!!}</p> 
         @endif
       </div>
