@@ -87,6 +87,9 @@ Public function update(Request $request,$id)
     $producto->status              = $request->input('status');
     $producto->ventaminima         = $request->input('ventaminima');
     $producto->ultimoingreso       = $request->input('ultimoingreso');
+    $producto->moneda              = $request->input('moneda');
+    $producto->precio              = $request->input('precio');
+    $producto->marca               = $request->input('marca');
     $producto->save();
     return redirect('/administracion/productos');
 }
