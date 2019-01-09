@@ -36,7 +36,7 @@ Información del producto {{$producto->nombre}}
             </p>
             {{-- ------------------------------------------------- --}}
             
-            <p class="lead">{{substr(nl2br(utf8_decode($producto->descripcionlarga)),0,100)}}...</p>
+            <p class="lead">{!!substr($producto->descripcionlarga,0,50)!!}...</p>
             <hr/>
             <h2 class="display-4"><span class="lead">{{$producto->moneda}}</span> {{number_format($producto->precio,2)}} <span class="lead">Impuestos incluidos</span></h2>
             <p class=""> Cantidad mínima de compra para este artículo:<span class="lead text-danger"> {{$producto->ventaminima}} unidades.</span>

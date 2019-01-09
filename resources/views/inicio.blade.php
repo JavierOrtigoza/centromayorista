@@ -31,7 +31,7 @@
         </a>
     </div>
     <div class="col-6 col-md-2 fotomarca">
-        <a href="productos-de-la-marca-MY BABY"><img src="{{asset ('imgs/marcas/mybaby.svg')}}" 
+        <a href="productos-de-la-marca-MYBABY"><img src="{{asset ('imgs/marcas/mybaby.svg')}}" 
         class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca MY BABY">
         </a>
     </div>

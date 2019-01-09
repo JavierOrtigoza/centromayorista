@@ -34,7 +34,7 @@
             <div class="col">
               <label for="">Descripción corta</label>
               <input type="text" class="form-control" id="descripcioncorta" name="descripcioncorta" placeholder="Descripción"
-              value="{{$producto->descripcion}}">
+              value="{{$producto->descripcioncorta}}">
             </div>
         
             <div class="col-sm-2">

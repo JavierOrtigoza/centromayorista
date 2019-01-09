@@ -34,6 +34,7 @@ Route::get('/administracion/productos/{id}/edit','AdminProductosController@edit'
 Route::post('/administracion/productos/{id}/actualizar', 'AdminProductosController@update'); //actualiza los datos del producto editado
 Route::get('/administracion','AdminProductosController@home'); //pagina de inicio de administración
 Route::get('/administracion/search','AdminProductosController@search'); // busca productos en el listado de artículos
+// Route::get('/administracion/configuraciones','AdminProductosController@config'); // datos de configuracion
 });
 
 Auth::routes();
