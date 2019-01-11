@@ -17,16 +17,16 @@
             HOGAR
         </a>
           <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-            <a class="dropdown-item " href="productos-de-la-familia-BAZAR">Bazar</a>
-            <a class="dropdown-item " href="productos-de-la-familia-ELECTRODOMESTICOS">Electrodomésticos</a>
-            <a class="dropdown-item " href="productos-de-la-familia-ELECTRONICA">Electrónica</a>
-            <a class="dropdown-item " href="productos-de-la-familia-FTA">Televisión Satelital</a>
-            <a class="dropdown-item " href="productos-de-la-familia-SEGURIDAD">Seguridad</a>
-            <a class="dropdown-item " href="productos-de-la-familia-FERRETERIA">Ferretería</a>
+            <a class="dropdown-item " href="productos-de-la-familia-BAZAR.html">Bazar</a>
+            <a class="dropdown-item " href="productos-de-la-familia-ELECTRODOMESTICOS.html">Electrodomésticos</a>
+            <a class="dropdown-item " href="productos-de-la-familia-ELECTRONICA.html">Electrónica</a>
+            <a class="dropdown-item " href="productos-de-la-familia-FTA.html">Televisión Satelital</a>
+            <a class="dropdown-item " href="productos-de-la-familia-SEGURIDAD.html">Seguridad</a>
+            <a class="dropdown-item " href="productos-de-la-familia-FERRETERIA.html">Ferretería</a>
 
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item " href="productos-de-la-familia-CROWN">CROWN</a>
-            <a class="dropdown-item " href="productos-de-la-familia-TOTAL">TOTAL</a>
+            <a class="dropdown-item " href="productos-de-la-familia-CROWN.html">CROWN</a>
+            <a class="dropdown-item " href="productos-de-la-familia-TOTAL.html">TOTAL</a>
           </div>
     </li>
 
@@ -35,15 +35,15 @@
           Regalos
       </a>
         <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-          <a class="dropdown-item " href="productos-de-la-familia-BEBE">Bebé</a>
-          <a class="dropdown-item " href="productos-de-la-familia-JUGUETERIA">Juguetería</a>
-          <a class="dropdown-item " href="productos-de-la-familia-DEPORTES">Deportes</a>
-          <a class="dropdown-item " href="productos-de-la-familia-REGALERIA">Regalería</a>
-          <a class="dropdown-item " href="productos-de-la-familia-PAPELERIA">Escolares y oficina</a>
-          <a class="dropdown-item " href="productos-de-la-familia-BOLSAS REGALO">Bolsas para regalo</a>
-          <a class="dropdown-item " href="productos-de-la-familia-EMPAQUE">Empaque</a>
+          <a class="dropdown-item " href="productos-de-la-familia-BEBE.html">Bebé</a>
+          <a class="dropdown-item " href="productos-de-la-familia-JUGUETERIA.html">Juguetería</a>
+          <a class="dropdown-item " href="productos-de-la-familia-DEPORTES.html">Deportes</a>
+          <a class="dropdown-item " href="productos-de-la-familia-REGALERIA.html">Regalería</a>
+          <a class="dropdown-item " href="productos-de-la-familia-PAPELERIA.html">Escolares y oficina</a>
+          <a class="dropdown-item " href="productos-de-la-familia-BOLSAS REGALO.html">Bolsas para regalo</a>
+          <a class="dropdown-item " href="productos-de-la-familia-EMPAQUE.html">Empaque</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item " href="productos-de-la-familia-SRI">Sistemas Retención Infantil</a>
+          <a class="dropdown-item " href="productos-de-la-familia-SRI.html">Sistemas Retención Infantil</a>
         </div>
     </li>
 
@@ -53,15 +53,15 @@
         Cuidado personal
     </a>
       <div class="dropdown-menu " aria-labelledby="navbarDropdown">
-        <a class="dropdown-item " href="productos-de-la-familia-COSMETICA">Cosmética</a>
-        <a class="dropdown-item " href="productos-de-la-familia-PERFUMES">Perfumería</a>
-        <a class="dropdown-item " href="productos-de-la-familia-TOCADOR">Tocador</a>
+        <a class="dropdown-item " href="productos-de-la-familia-COSMETICA.html">Cosmética</a>
+        <a class="dropdown-item " href="productos-de-la-familia-PERFUMES.html">Perfumería</a>
+        <a class="dropdown-item " href="productos-de-la-familia-TOCADOR.html">Tocador</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item " href="productos-de-la-familia-VESTIMENTA">Vestimenta</a>
-        <a class="dropdown-item " href="productos-de-la-familia-CALZADO">Calzado</a>
-        <a class="dropdown-item " href="productos-de-la-familia-ORTOPEDIA">Ortopedia</a>
+        <a class="dropdown-item " href="productos-de-la-familia-VESTIMENTA.html">Vestimenta</a>
+        <a class="dropdown-item " href="productos-de-la-familia-CALZADO.html">Calzado</a>
+        <a class="dropdown-item " href="productos-de-la-familia-ORTOPEDIA.html">Ortopedia</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item " href="productos-de-la-familia-SEX TOYS">Sex-Toys</a>
+        <a class="dropdown-item " href="productos-de-la-familia-SEX TOYS.html">Sex-Toys</a>
       </div>
 </li>
 

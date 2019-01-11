@@ -15,9 +15,9 @@
 // ======================================================================
 Route::get('/', 'ProductosController@inicio'); // página de inicio
 
-Route::get('productos-de-la-familia-{familia}', 'ProductosController@productosporfamilia'); // listado de productos por familia
+Route::get('productos-de-la-familia-{familia}.html', 'ProductosController@productosporfamilia'); // listado de productos por familia
 
-Route::get('productos-de-la-marca-{marca}', 'ProductosController@productospormarca'); // listado de productos por marca
+Route::get('productos-de-la-marca-{marca}.html', 'ProductosController@productospormarca'); // listado de productos por marca
 
 Route::get('pagina-del-producto-{id}-de-{familia}-{nombreslug}','ProductosController@productoindividual'); // ficha de producto individual
 

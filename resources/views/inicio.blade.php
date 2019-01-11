@@ -12,7 +12,7 @@
 
 <div class="jumbotron text-center">
 
-    <a href="productos-de-la-marca-ORUS"><img src="{{asset ('imgs/slide/fotopromo.jpeg')}}"
+    <a href="productos-de-la-marca-ORUS.html"><img src="{{asset ('imgs/slide/fotopromo.jpeg')}}"
     class="img-fluid fotopromo" type="max-width: 100%" alt=""></a>
 </div>
 
@@ -20,29 +20,29 @@
 <div class ="container fondomarcas">
 <div class="row ">
     <div class="col-6 col-md-2 fotomarca">
-        <a href="productos-de-la-marca-TOTAL"><img src="{{asset ('imgs/marcas/total.svg')}}"
+        <a href="productos-de-la-marca-TOTAL.html"><img src="{{asset ('imgs/marcas/total.svg')}}"
         class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca TOTAL">
         </a>
     </div>
 
     <div class="col-6 col-md-2 fotomarca">
-        <a href="productos-de-la-marca-CROWN"><img src="{{asset ('imgs/marcas/crown.svg')}}"
+        <a href="productos-de-la-marca-CROWN.html"><img src="{{asset ('imgs/marcas/crown.svg')}}"
          class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca CROWN">
         </a>
     </div>
     <div class="col-6 col-md-2 fotomarca">
-        <a href="productos-de-la-marca-MYBABY"><img src="{{asset ('imgs/marcas/mybaby.svg')}}" 
+        <a href="productos-de-la-marca-MYBABY.html"><img src="{{asset ('imgs/marcas/mybaby.svg')}}" 
         class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca MY BABY">
         </a>
     </div>
     <div class="col-6 col-md-2 fotomarca">
-        <a href="productos-de-la-marca-GEMEI"><img src="{{asset ('imgs/marcas/gemei.svg')}}" 
+        <a href="productos-de-la-marca-GEMEI.html"><img src="{{asset ('imgs/marcas/gemei.svg')}}" 
         class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca GEMEI">
         </a>
     </div>
 
     <div class="col-6 col-md-2 fotomarca">
-        <a href="productos-de-la-marca-ORUS"><img src="{{asset ('imgs/marcas/orus.svg')}}" 
+        <a href="productos-de-la-marca-ORUS.html"><img src="{{asset ('imgs/marcas/orus.svg')}}" 
         class="img-fluid" type="max-width: 100%" alt="Mostrar los productos de la marca ORUS">
         </a>
     </div>
