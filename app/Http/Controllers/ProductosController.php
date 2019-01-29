@@ -48,7 +48,8 @@ Public function productoindividual($id)
 
 Public function inicio() // página de inicio de la aplicación
     {
-    $producto = Producto::all()->where('status','<>',0)->random(16); // selecciona 16 arts aleatoriamente
+    $producto = Producto::all()->where('status','<>',0)->where('familia','<>','SEX TOYS')
+    ->random(16); // selecciona 16 arts aleatoriamente
     return view('inicio')->with(compact('producto'));
     // return $producto;
     }
